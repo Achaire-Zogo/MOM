@@ -124,7 +124,7 @@ html = """
         </div>
         <script>
             function connect() {
-                var ws = new WebSocket(`ws://${window.location.hostname}:${WEBSOCKET_PORT}/ws`);
+                var ws = new WebSocket(`ws://localhost:8003/ws`);
                 
                 ws.onmessage = function(event) {
                     console.log("Message reçu:", event.data);
